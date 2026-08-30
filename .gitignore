@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.*
+*.env
+
+# Application Logs & Session History
+*.log
+*.jsonl
+gimp_agent_session.jsonl
+
+# Editor / IDE Configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Upstream Reference Repositories
+upstream_gimp_mcp/
+
+# Temporary outputs / test exports
+test_output/
+*.tmp
+

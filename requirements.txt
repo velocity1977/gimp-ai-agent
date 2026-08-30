@@ -1,0 +1,11 @@
+# Core dependencies
+# Note: Python standard library (urllib, json, socket) is used for zero-dependency baseline.
+
+# Optional: If installing the upstream MCP package directly from Git or local directory:
+# gimp-mcp @ git+https://github.com/maorcc/gimp-mcp.git
+# Or for local editable development:
+# -e ./upstream_gimp_mcp
+
+# Optional SDKs (if you prefer official SDKs over native REST in llm_providers.py):
+# openai>=1.0.0
+# google-genai>=0.1.0
