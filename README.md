@@ -225,13 +225,13 @@ All 50 tools are fully implemented and grouped into 5 categories:
 
 ## 📡 Socket Protocol Specification
 
-The client and in-GIMP plugin communicate over TCP `localhost:9877` using newline-delimited JSON (`\n`).
+The client and in-GIMP plugin communicate over TCP `localhost:9877`. Each request opens a new connection, sends one JSON payload, and reads the response until the server closes the connection (EOF-based framing — not newline-delimited).
 
 ### Request Format:
 ```json
 {
-  "tool": "adjust_brightness_contrast",
-  "arguments": {
+  "type": "adjust_brightness_contrast",
+  "params": {
     "image_id": 1,
     "layer_id": 2,
     "brightness": 0.2,
